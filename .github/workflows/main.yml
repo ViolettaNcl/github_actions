@@ -30,4 +30,5 @@ jobs:
       run: dotnet tool install -g dotnet-format
 
     - name: Format code and check for issues
-      run: dotnet format --check
+      run: dotnet format github_actions.csproj --check
+
