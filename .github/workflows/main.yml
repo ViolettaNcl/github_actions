@@ -26,7 +26,8 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
 
-    - name: Check code formatting
-      run: |
-        dotnet tool install -g dotnet-format
-        dotnet format --check --verbosity normal
+    - name: Install dotnet-format tool
+      run: dotnet tool install -g dotnet-format
+
+    - name: Format code and check for issues
+      run: dotnet format --check
