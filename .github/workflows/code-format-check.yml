@@ -27,4 +27,5 @@ jobs:
       run: dotnet test --no-build --verbosity normal
 
     - name: Check format
-      run: dotnet format MyProject/MyProject.csproj --verify-no-changes --severity warn
+      run: dotnet format github_actions.csproj --verify-no-changes --severity warn
+
